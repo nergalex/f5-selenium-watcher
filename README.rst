@@ -26,13 +26,6 @@ Installation guide
    :width: 300
    :alt: setUp
 
-- Choose **ONLY** those packages ton install: ``selenium``, ``requests``
-
-.. image:: ./_pictures/no_install_2captcha.png
-   :align: center
-   :width: 300
-   :alt: setUp
-
 Run
 *****************************************
 
