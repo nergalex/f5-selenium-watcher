@@ -1,11 +1,3 @@
-Customer flow
-##############################################################
-
-.. image:: ./_pictures/UFO_mamy.png
-   :align: center
-   :width: 800
-   :alt: All layers
-
 .. contents:: Contents
     :local:
 
