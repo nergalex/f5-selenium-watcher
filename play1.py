@@ -24,7 +24,7 @@ class Flow1(unittest.TestCase):
         URI = "INPUT"
         LOGIN_USER = "INPUT"
         LOGIN_PASSWORD = "INPUT"
-        LOGIN_BIRTHDAY = "INPUT"
+        LOGIN_BIRTHDAY = "12/12/1981"
         CAPTCHA_API_KEY = "INPUT"
         LOOP_ITERATION = 2
 
@@ -105,7 +105,7 @@ class Flow1(unittest.TestCase):
             # bingo-live game
             tmp_uri = URI + "/bingo-live-et-multijoueur/bingo-live/bingo-live-one"
             self.driver.get(tmp_uri)
-            time.sleep(5)
+            time.sleep(6)
 
             # keno
             tmp_uri = URI + "/jeux-keno"
@@ -152,7 +152,7 @@ class Flow1(unittest.TestCase):
             # MyAccount
             element = self.getElementClass("main-nav_connect-user_myaccount")
             self.clickButton(element)
-            time.sleep(1)
+            time.sleep(2)
 
             # Retrait
             element = self.getElementId("wsi-connected-layer-summary-wallets-withdrawal-button")
@@ -171,8 +171,6 @@ class Flow1(unittest.TestCase):
             # User account
             element = self.getElementId("wsi-connected-layer-summary-disconnect-button")
             self.clickButton(element)
-
-            time.sleep(1000)
 
     def tearDown(self):
         self.driver.close()
