@@ -21,12 +21,11 @@ class Flow1(unittest.TestCase):
 
     def setUp(self):
         global URI, LOGIN_USER, LOGIN_PASSWORD, LOGIN_BIRTHDAY, CAPTCHA_API_KEY, solver, USER_AGENT, LOOP_ITERATION
-        URI = "INPUT"
-        LOGIN_USER = "INPUT"
-        LOGIN_PASSWORD = "INPUT"
-        LOGIN_BIRTHDAY = "12/12/1981"
+        URI = "https://www.fdj.fr"
+        LOGIN_USER = "nergalex@hotmail.com"
+        LOGIN_PASSWORD = "K4moul0x!"
+        LOGIN_BIRTHDAY = "24/06/1981"
         CAPTCHA_API_KEY = "INPUT"
-        LOOP_ITERATION = 2
 
         # local
         PATH = "./_files/chromedriver.exe"
@@ -65,7 +64,8 @@ class Flow1(unittest.TestCase):
         element = self.getElementId("popin_tc_privacy_button_2")
         self.clickButton(element)
 
-        for i in range(LOOP_ITERATION):
+        infinite = True
+        while infinite:
 
             # tous-les-jeux
             tmp_uri = URI + "/tous-les-jeux?t=&o=new"
